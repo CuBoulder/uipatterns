@@ -1,0 +1,32 @@
+.campus-map-embed a {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  .embed-map-label {
+    background: black;
+    color:#fff;
+    display: block;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:5px;
+    font-size: 85%;
+    span {
+      color: #fff;
+    }
+  }
+}
+
+/* List as flexbox */
+ul.flex {
+  display:flex;
+  flex-wrap: wrap;
+  margin:0 -20px 20px;
+  & > li {
+    padding:10px 20px;
+    //flex-grow:1;
+    //min-width:25%;
+  }
+}

@@ -1,0 +1,25 @@
+---
+title: Directory Item
+layout: default
+---
+
+<div itemscope itemtype="http://schema.org/Organization">
+  <h1 itemprop="name" id="page-title">{{ page.title }}</h1>
+    <div class="row">
+      <section itemprop="description" class="col-md-8">
+        <p>Description goes here.</p>
+
+        <h2 class="margin-none">Contact Information</h2>
+        {% include directory/contact-primary.html %}
+        <h2 class="margin-none">Social</h2>
+        {% include directory/social.html %}
+        <h2 class="margin-none">Additional Contacts</h2>
+        {% include directory/contact-additional.html %}
+        <h2 class="margin-none">Links</h2>
+        {% include directory/links.html %}
+      </section>
+      <section class="col-md-4">
+        {% include directory/location.html %}
+      </section>
+    </div>
+</div>
